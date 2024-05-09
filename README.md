@@ -11,19 +11,19 @@ OBS Python script that detects your team color from the game UI and updates a fi
   - Hold shift and right-click and select "Open PowerShell window here"
   - In the PowerShell window, type: `python -m pip -r requirements.txt`
 - Download a zip archive of the code using the green button above labeled "Code"
-- Extract to someplace warm and cozy on your PC where it will get direct sunlight
+- Extract the zip to some place warm and cozy on your PC where it will get direct sunlight
 - Add shader as a filter on the source you'd like to see change color
   - In OBS, in your Sources panel, right-click the source and select Filters
   - Click the plus (+) button below the Effect Filters list
-  - Give it a name a remember it for a few minutes
-  - In the right panel with your new effect filter selected, check "Load shader text from file"
+  - Give it a name and remember it for a few minutes
+  - In the right panel, with your new effect filter selected, check "Load shader text from file"
   - Click the Browse button beside the empty box labeled "Shader text file"
   - Navigate to the code directory you extracted and select `replace_hue.shader`
   - Move the slider labeled "Target Hue" until the chroma key color in your source is replaced with the values defined by the "To Red/Green/Blue" sliders
 - Add the script to OBS
   - In OBS, open the Scripts dialogue box (Tools->Scripts)
   - Switch to the tab "Python Settings"
-  - Browse to the location of `3.11` on your PC. For example: `"C:/Users/Agent8/AppData/Local/Programs/Python/Python311"`
+  - Browse to the location of `Python 3.11` on your PC. For example: `"C:/Users/Agent8/AppData/Local/Programs/Python/Python311"`
   - Navigate to the code directory you extracted and select `s3_obs_detect_color.py`
   - Set the parameters of the script:
     - Source Name: name of the source to which you added the obs-shaderfilter
@@ -43,4 +43,4 @@ OBS Python script that detects your team color from the game UI and updates a fi
     - Set the Default Color to whatever color you'd like your source to start with
     - Check the box labeled "Running" at the top of the parameters once every other parameter is correctly defined
 - Close and reopen OBS to save your settings and reload the script
-- Enjoy! (optional)
+- Enjoy! (Optional)
