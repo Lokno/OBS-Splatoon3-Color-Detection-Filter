@@ -242,6 +242,7 @@ def update_filter():
         frame_count += 1
 
 
-#def script_cleanup():
-#    vid.release()
-#    cv2.destroyAllWindows()
+def script_cleanup():
+    global vid
+    if vid is not None:
+        vid.release()
